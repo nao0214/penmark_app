@@ -1,0 +1,41 @@
+<ons-page id="content2">
+
+    <ons-toolbar>
+        <div class="center">ニュース</div>
+    </ons-toolbar>
+    <div class="tab-switch">
+        <div class="tab-switch_inner" ng-style="tabPoint">
+            <div class="tab-switch_item">トップ</div>
+            <div class="tab-switch_item">ランキング</div>
+            <div class="tab-switch_item">イベント</div>
+            <div class="tab-switch_item">スタディ</div>
+            <div class="tab-switch_item">ジョブ</div>
+            <div class="tab-switch_item">コミュニティ</div>
+            <div class="tab-switch_item">ライフ</div>
+        </div>
+    </div>
+    <ons-carousel swipeable overscrollable auto-scroll var="carousel">
+        <ons-carousel-item>
+            <ons-carousel swipeable overscrollable auto-scroll class="pickupPosts">
+            </ons-carousel>
+            <div class="newPosts">
+                <p>新着記事</p>
+            </div>
+        </ons-carousel-item>
+        <ons-carousel-item>
+            <div>BLUE</div>
+        </ons-carousel-item>
+        <ons-carousel-item>
+            <div>DARK</div>
+        </ons-carousel-item>
+        <ons-carousel-item>
+            <div>ORANGE</div>
+        </ons-carousel-item>
+    </ons-carousel>
+    
+    <style>
+        .pickupPosts .post{width:100%; position: relative;}
+        .pickupPosts .post li{position: absolute;}
+        
+    </style>
+</ons-page>
